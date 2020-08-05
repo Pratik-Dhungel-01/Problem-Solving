@@ -104,8 +104,8 @@ function wildCardCharacters(str){
     return true
 }
 
-let testString = '+++++* abcdemmmmmm';
-// let testString = '++*{5} gheeeee'
-// let testString = '**+*{2} mmmrrrkbb';
-let output = wildCardCharacters(testString);
+let inputString = '+++++* abcdemmmmmm';
+// let inputString = '++*{5} gheeeee'
+// let inputString = '**+*{2} mmmrrrkbb';
+let output = wildCardCharacters(inputString);
 console.log(output);

@@ -43,7 +43,8 @@ function wildCardCharacters(str){
         
         // If first character is {N} then terminate check because {N} should always be behind a * character
         if(firstString[0] === '{'){
-            return 'First character is {N}';
+            console.log('First character is {N}');
+            return false
         }
 
         // If the character in first string is a '+' but there are 2 same characters in second string then terminate the check
@@ -104,8 +105,8 @@ function wildCardCharacters(str){
     return true
 }
 
-let inputString = '+++++* abcdemmmmmm';
+// let inputString = '+++++* abcdemmmmmm';
 // let inputString = '++*{5} gheeeee'
-// let inputString = '**+*{2} mmmrrrkbb';
+let inputString = '{N}**+*{2} mmmrrrkbb';
 let output = wildCardCharacters(inputString);
 console.log(output);
